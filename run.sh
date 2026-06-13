@@ -9,7 +9,7 @@
 #SBATCH --output=runs/slurm_logs/ner_pipeline_%j.out
 #SBATCH --error=runs/slurm_logs/ner_pipeline_%j.err
 
-source ../venv/bin/activate
+source /csl/users/2028efeldman/venv/bin/activate
 
 echo "Starting custom llama-server with DeepSeek-V4-Flash..."
 ../llama.cpp/build/bin/llama-server \
