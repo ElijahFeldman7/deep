@@ -210,9 +210,9 @@ def extract_ner(client: OpenAI, model: str, system_prompt: str, input_text: str,
 def main() -> None:
     global chunk_buffer
     parser = argparse.ArgumentParser()
-    parser.add_argument("--input",       default="dataset.csv",  help="Input CSV path")
-    parser.add_argument("--output",      default="dataset_extracted.csv", help="Final Master CSV path")
-    parser.add_argument("--cache",       default="cache.json",  help="JSON cache file")
+    parser.add_argument("--input",       default="dataset/dataset.csv",  help="Input CSV path")
+    parser.add_argument("--output",      default="dataset/dataset_extracted.csv", help="Final Master CSV path")
+    parser.add_argument("--cache",       default="dataset/cache.json",  help="JSON cache file")
     parser.add_argument("--url",         default="http://localhost:8000/v1", help="API URL")
     parser.add_argument("--model",       default="deepseek-ai/DeepSeek-V4-Flash", help="Model name")
     parser.add_argument("--max-retries", type=int,   default=3)

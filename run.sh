@@ -6,16 +6,16 @@
 #SBATCH --cpus-per-task=16       
 #SBATCH --mem=32G                
 #SBATCH --time=48:00:00          
-#SBATCH --output=ner_pipeline_%j.out
-#SBATCH --error=ner_pipeline_%j.err
+#SBATCH --output=runs/slurm_logs/ner_pipeline_%j.out
+#SBATCH --error=runs/slurm_logs/ner_pipeline_%j.err
 
 # 1. Activate your environment
-source /tmp/venv/bin/activate
+source ../venv/bin/activate
 
 # 2. Start the custom-built llama-server in the background
 # (We added --split-mode layer and --flash-attn off to prevent graph input inflation)
 echo "Starting custom llama-server with DeepSeek-V4-Flash..."
-./llama.cpp/build/bin/llama-server \
+../llama.cpp/build/bin/llama-server \
     --model /csl/users/2028efeldman/model/Q4_K_M-XL/DeepSeek-V4-Flash-Q4_K_M-XL-00001-of-00004.gguf \
     --n_gpu_layers 99 \
     --ctx_size 32768 \
@@ -34,11 +34,11 @@ echo "Custom V4 server is fully loaded and ready on port 8000!"
 
 # 4. Run your python extraction script
 python run.py \
-    --input dataset.csv \
-    --output dataset_extracted.csv \
-    --cache cache.json \
+    --input dataset/dataset.csv \
+    --output dataset/dataset_extracted.csv \
+    --cache dataset/cache.json \
     --url http://localhost:8000/v1 \
-    --model /csl/users/2028efeldman/model/Q4_K_M-XL/DeepSeek-V4-Flash-Q4_K_M-XL-00001-of-00004.gguf
+    --model /csl/users/2028efeldman/model/Q4_K_M-XL/DeepSeek-V4-Flash-Q4_K_M-XL-00001-of-00004.gguf \
     --concurrency 4
 # 5. Clean up
 kill $SERVER_PID
