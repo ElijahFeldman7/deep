@@ -1,0 +1,30 @@
+ggml_cuda_init: found 6 CUDA devices (Total VRAM: 290412 MiB):
+  Device 0: Quadro RTX 8000, compute capability 7.5, VMM: yes, VRAM: 48402 MiB
+  Device 1: Quadro RTX 8000, compute capability 7.5, VMM: yes, VRAM: 48402 MiB
+  Device 2: Quadro RTX 8000, compute capability 7.5, VMM: yes, VRAM: 48402 MiB
+  Device 3: Quadro RTX 8000, compute capability 7.5, VMM: yes, VRAM: 48402 MiB
+  Device 4: Quadro RTX 8000, compute capability 7.5, VMM: yes, VRAM: 48402 MiB
+  Device 5: Quadro RTX 8000, compute capability 7.5, VMM: yes, VRAM: 48402 MiB
+main: n_parallel is set to auto, using n_parallel = 4 and kv_unified = true
+build_info: b9340-781e978f3
+system_info: n_threads = 48 (n_threads_batch = 48) / 96 | CUDA : ARCHS = 750 | USE_GRAPHS = 1 | PEER_MAX_BATCH_SIZE = 128 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | AVX512 = 1 | AVX512_VNNI = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+Running without SSL
+init: using 95 threads for HTTP server
+start: binding port with default address family
+main: loading model
+srv    load_model: loading model '/home/2028efeldman/model/Q4_K_M-XL/DeepSeek-V4-Flash-Q4_K_M-XL-00001-of-00004.gguf'
+common_init_result: fitting params to device memory, for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on
+common_params_fit_impl: getting device memory data for initial parameters:
+gguf_init_from_file: failed to open GGUF file '/home/2028efeldman/model/Q4_K_M-XL/DeepSeek-V4-Flash-Q4_K_M-XL-00001-of-00004.gguf' (No such file or directory)
+llama_model_load: error loading model: llama_model_loader: failed to load model from /home/2028efeldman/model/Q4_K_M-XL/DeepSeek-V4-Flash-Q4_K_M-XL-00001-of-00004.gguf
+llama_model_load_from_file_impl: failed to load model
+common_fit_params: encountered an error while trying to fit params to free device memory: failed to load model
+common_fit_params: fitting params to free memory took 0.11 seconds
+gguf_init_from_file: failed to open GGUF file '/home/2028efeldman/model/Q4_K_M-XL/DeepSeek-V4-Flash-Q4_K_M-XL-00001-of-00004.gguf' (No such file or directory)
+llama_model_load: error loading model: llama_model_loader: failed to load model from /home/2028efeldman/model/Q4_K_M-XL/DeepSeek-V4-Flash-Q4_K_M-XL-00001-of-00004.gguf
+llama_model_load_from_file_impl: failed to load model
+common_init_from_params: failed to load model '/home/2028efeldman/model/Q4_K_M-XL/DeepSeek-V4-Flash-Q4_K_M-XL-00001-of-00004.gguf'
+srv    load_model: failed to load model, '/home/2028efeldman/model/Q4_K_M-XL/DeepSeek-V4-Flash-Q4_K_M-XL-00001-of-00004.gguf'
+srv    operator(): operator(): cleaning up before exit...
+main: exiting due to model loading error
+slurmstepd-unicron: error: *** JOB 831 ON unicron CANCELLED AT 2026-06-12T03:51:55 ***

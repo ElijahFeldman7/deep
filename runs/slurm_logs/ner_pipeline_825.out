@@ -1,0 +1,9 @@
+Starting vLLM server on all 6 Turing GPUs...
+Waiting for local GGUF server to start...
+(APIServer pid=6811) INFO 06-12 00:54:24 [utils.py:344] 
+(APIServer pid=6811) INFO 06-12 00:54:24 [utils.py:344]        █     █     █▄   ▄█
+(APIServer pid=6811) INFO 06-12 00:54:24 [utils.py:344]  ▄▄ ▄█ █     █     █ ▀▄▀ █  version 0.22.1
+(APIServer pid=6811) INFO 06-12 00:54:24 [utils.py:344]   █▄█▀ █     █     █     █  model   teamblobfish/DeepSeek-V4-Flash-GGUF
+(APIServer pid=6811) INFO 06-12 00:54:24 [utils.py:344]    ▀▀  ▀▀▀▀▀ ▀▀▀▀▀ ▀     ▀
+(APIServer pid=6811) INFO 06-12 00:54:24 [utils.py:344] 
+(APIServer pid=6811) INFO 06-12 00:54:24 [utils.py:278] non-default args: {'model': 'teamblobfish/DeepSeek-V4-Flash-GGUF', 'tokenizer': 'deepseek-ai/DeepSeek-V4-Flash', 'max_model_len': 32768, 'pipeline_parallel_size': 3, 'tensor_parallel_size': 2}

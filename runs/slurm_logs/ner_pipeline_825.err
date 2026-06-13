@@ -1,0 +1,52 @@
+(APIServer pid=6811) Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+(APIServer pid=6811) Traceback (most recent call last):
+(APIServer pid=6811)   File "<frozen runpy>", line 198, in _run_module_as_main
+(APIServer pid=6811)   File "<frozen runpy>", line 88, in _run_code
+(APIServer pid=6811)   File "/tmp/venv/lib/python3.12/site-packages/vllm/entrypoints/openai/api_server.py", line 718, in <module>
+(APIServer pid=6811)     uvloop.run(run_server(args))
+(APIServer pid=6811)   File "/tmp/venv/lib/python3.12/site-packages/uvloop/__init__.py", line 96, in run
+(APIServer pid=6811)     return __asyncio.run(
+(APIServer pid=6811)            ^^^^^^^^^^^^^^
+(APIServer pid=6811)   File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+(APIServer pid=6811)     return runner.run(main)
+(APIServer pid=6811)            ^^^^^^^^^^^^^^^^
+(APIServer pid=6811)   File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+(APIServer pid=6811)     return self._loop.run_until_complete(task)
+(APIServer pid=6811)            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=6811)   File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+(APIServer pid=6811)   File "/tmp/venv/lib/python3.12/site-packages/uvloop/__init__.py", line 48, in wrapper
+(APIServer pid=6811)     return await main
+(APIServer pid=6811)            ^^^^^^^^^^
+(APIServer pid=6811)   File "/tmp/venv/lib/python3.12/site-packages/vllm/entrypoints/openai/api_server.py", line 678, in run_server
+(APIServer pid=6811)     await run_server_worker(listen_address, sock, args, **uvicorn_kwargs)
+(APIServer pid=6811)   File "/tmp/venv/lib/python3.12/site-packages/vllm/entrypoints/openai/api_server.py", line 692, in run_server_worker
+(APIServer pid=6811)     async with build_async_engine_client(
+(APIServer pid=6811)   File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+(APIServer pid=6811)     return await anext(self.gen)
+(APIServer pid=6811)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=6811)   File "/tmp/venv/lib/python3.12/site-packages/vllm/entrypoints/openai/api_server.py", line 100, in build_async_engine_client
+(APIServer pid=6811)     async with build_async_engine_client_from_engine_args(
+(APIServer pid=6811)   File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+(APIServer pid=6811)     return await anext(self.gen)
+(APIServer pid=6811)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=6811)   File "/tmp/venv/lib/python3.12/site-packages/vllm/entrypoints/openai/api_server.py", line 124, in build_async_engine_client_from_engine_args
+(APIServer pid=6811)     vllm_config = engine_args.create_engine_config(usage_context=usage_context)
+(APIServer pid=6811)                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=6811)   File "/tmp/venv/lib/python3.12/site-packages/vllm/engine/arg_utils.py", line 1730, in create_engine_config
+(APIServer pid=6811)     model_config = self.create_model_config()
+(APIServer pid=6811)                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=6811)   File "/tmp/venv/lib/python3.12/site-packages/vllm/engine/arg_utils.py", line 1560, in create_model_config
+(APIServer pid=6811)     return ModelConfig(
+(APIServer pid=6811)            ^^^^^^^^^^^^
+(APIServer pid=6811)   File "/tmp/venv/lib/python3.12/site-packages/pydantic/_internal/_dataclasses.py", line 121, in __init__
+(APIServer pid=6811)     s.__pydantic_validator__.validate_python(ArgsKwargs(args, kwargs), self_instance=s)
+(APIServer pid=6811) pydantic_core._pydantic_core.ValidationError: 1 validation error for ModelConfig
+(APIServer pid=6811)   Value error, Invalid repository ID or local directory specified: 'teamblobfish/DeepSeek-V4-Flash-GGUF'.
+(APIServer pid=6811) Please verify the following requirements:
+(APIServer pid=6811) 1. Provide a valid Hugging Face repository ID.
+(APIServer pid=6811) 2. Specify a local directory that contains a recognized configuration file.
+(APIServer pid=6811)    - For Hugging Face models: ensure the presence of a 'config.json'.
+(APIServer pid=6811)    - For Mistral models: ensure the presence of a 'params.json'.
+(APIServer pid=6811)  [type=value_error, input_value=ArgsKwargs((), {'model': ...nderer_num_workers': 1}), input_type=ArgsKwargs]
+(APIServer pid=6811)     For further information visit https://errors.pydantic.dev/2.13/v/value_error
+slurmstepd-unicron: error: *** JOB 825 ON unicron CANCELLED AT 2026-06-12T00:58:39 ***
