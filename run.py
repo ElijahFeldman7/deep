@@ -1,13 +1,3 @@
-#!/usr/bin/env python3
-"""
-Advanced Parallel NER-RE extraction pipeline via llama-server (llama.cpp).
-Uses "Sharded Output" (Chunking) to eliminate NFS bottlenecks, with live-preview
-logging so you can see the extractions in your console in real-time.
-
-Usage:
-    python run.py --input dataset.csv --output dataset_extracted.csv --cache cache.json --concurrency 4
-"""
-
 import argparse
 import csv
 import json
@@ -31,7 +21,6 @@ except ImportError:
     print("ERROR: openai package not installed. Run: pip install openai", file=sys.stderr)
     sys.exit(1)
 
-# ── Delimiters & Config ───────────────────────────────────────────────────────
 TUPLE_DELIMITER      = "|"
 RECORD_DELIMITER     = "\n"
 COMPLETION_DELIMITER = "<END>"
@@ -50,7 +39,6 @@ print_lock = threading.Lock()
 chunk_buffer = []
 chunk_counter = 1
 
-# ── System prompt ─────────────────────────────────────────────────────────────
 SYSTEM_PROMPT_TEMPLATE = """\
 -Goal-
 You are an expert in Named Entity and Relationship Extraction (NER-RE) with a specialization in extracting entities and relationships from legal case documents related to human smuggling. You are highly skilled at identifying and extracting only entities of the specified entity types, as well as extracting explicit relationships between them. These extracted entities and relationships will be used to build a Knowledge Graph, which will help researchers analyze human smuggling networks and identify patterns. Therefore, it is crucial to maintain strict factual accuracy and extract only what is explicitly stated in the input text, without inference or completion. You will receive entity definitions, input text, and structured examples demonstrating the correct extraction process. Study these examples carefully before performing extraction on the real input data.
@@ -141,7 +129,6 @@ def save_cache(cache_path: str, cache: dict) -> None:
     os.replace(tmp, cache_path)
 
 def save_chunk(rows: list[dict], fieldnames: list[str]) -> None:
-    """Writes a small subset of rows to the chunks directory."""
     global chunk_counter
     os.makedirs(CHUNK_DIR, exist_ok=True)
     chunk_path = os.path.join(CHUNK_DIR, f"chunk_{chunk_counter:04d}.csv")
@@ -152,7 +139,6 @@ def save_chunk(rows: list[dict], fieldnames: list[str]) -> None:
     chunk_counter += 1
 
 def compile_master_csv(master_path: str, active_rows: list[dict], fieldnames: list[str], cache: dict) -> None:
-    """Updates the master list with all cached answers and saves the final file."""
     for r in active_rows:
         key = r.get(ORIGIN_COL, "").strip()
         if key in cache:
@@ -181,20 +167,21 @@ def extract_ner(client: OpenAI, model: str, system_prompt: str, input_text: str,
                     {"role": "user",   "content": input_text},
                 ],
                 temperature=0.0,
-                max_tokens=256,  # Enforce 256 token cap to prevent slow infinite loops
+                max_tokens=8192,  
                 stop=[
-                    "<｜end▁of▁sentence｜>", 
-                    "<｜end of sentence｜>",  # Space-decoded EOS
-                    "<｜EOT｜>",             # DeepSeek End of Text
+                    "<|end▁of▁sentence|>", 
+                    "<|end of sentence|>",  
+                    "<|EOT|>",            
                     "<END>", 
                     "Example 0",    
-                    "Input_text",   
-                    "Output:",       
-                    "\n\n\n",       
-                    "###"           
                 ]
             )
-            content = (response.choices[0].message.content or "").strip()
+            raw_content = response.choices[0].message.content or ""
+            content = raw_content.strip()
+
+            if not content and response.usage and response.usage.completion_tokens > 0:
+                log.warning(f"Empty content but {response.usage.completion_tokens} tokens generated. Raw: {repr(raw_content[:100])}...")
+
             prompt_tokens = response.usage.prompt_tokens if response.usage else 0
             completion_tokens = response.usage.completion_tokens if response.usage else 0
             return content, prompt_tokens, completion_tokens
@@ -234,7 +221,6 @@ def main() -> None:
     os.makedirs(CHUNK_DIR, exist_ok=True)
     cache = load_cache(args.cache)
     
-    # Load Data
     with open(args.input, "r", newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         fieldnames = reader.fieldnames if reader.fieldnames else []
@@ -242,7 +228,6 @@ def main() -> None:
             fieldnames.append(OUTPUT_COL)
         active_rows = list(reader)
 
-    # Identify Pending Work
     pending_items = []
     for r in active_rows:
         key = r.get(ORIGIN_COL, "").strip()
@@ -286,7 +271,6 @@ def main() -> None:
 
         row_start = time.time()
         
-        # Query the Server
         result, prompt_tokens, completion_tokens = extract_ner(
             client, args.model, system_prompt, text,
             args.max_retries, args.retry_delay, log
@@ -305,14 +289,12 @@ def main() -> None:
                 fail += 1
             status_str = "FAILED"
 
-        # Safe Chunk Writing
         with csv_lock:
             chunk_buffer.append(row)
             if len(chunk_buffer) >= CHUNK_SIZE:
                 save_chunk(chunk_buffer, fieldnames)
                 chunk_buffer.clear()
 
-        # Reporting calculation
         with cache_lock:
             task_counter += 1
             rolling_latencies.append(latency)
@@ -337,7 +319,6 @@ def main() -> None:
                 f"Success: {success} | "
                 f"ETA: {eta_str}"
             )
-            # LIVE PREVIEW LOG: Print a clean single-line preview of what was extracted!
             if result and status_str == "EXTRACTED":
                 clean_result = result.replace('\n', ' \\ ')
                 log.info(f"   ↳ Live Preview: {clean_result[:130]}...")

@@ -9,11 +9,8 @@
 #SBATCH --output=runs/slurm_logs/ner_pipeline_%j.out
 #SBATCH --error=runs/slurm_logs/ner_pipeline_%j.err
 
-# 1. Activate your environment
 source ../venv/bin/activate
 
-# 2. Start the custom-built llama-server in the background
-# (We added --split-mode layer and --flash-attn off to prevent graph input inflation)
 echo "Starting custom llama-server with DeepSeek-V4-Flash..."
 ../llama.cpp/build/bin/llama-server \
     --model /csl/users/2028efeldman/model/Q4_K_M-XL/DeepSeek-V4-Flash-Q4_K_M-XL-00001-of-00004.gguf \
@@ -25,14 +22,12 @@ echo "Starting custom llama-server with DeepSeek-V4-Flash..."
     --port 8000 &
 SERVER_PID=$!
 
-# 3. Wait properly using the /health endpoint until it returns HTTP 200
 echo "Waiting for the 165GB model to fully load into VRAM..."
 while [ "$(curl -s -o /dev/null -w "%{http_code}" http://localhost:8000/health)" -ne 200 ]; do
     sleep 15
 done
 echo "Custom V4 server is fully loaded and ready on port 8000!"
 
-# 4. Run your python extraction script
 python run.py \
     --input dataset/dataset.csv \
     --output dataset/dataset_extracted.csv \
@@ -40,6 +35,5 @@ python run.py \
     --url http://localhost:8000/v1 \
     --model /csl/users/2028efeldman/model/Q4_K_M-XL/DeepSeek-V4-Flash-Q4_K_M-XL-00001-of-00004.gguf \
     --concurrency 4
-# 5. Clean up
 kill $SERVER_PID
 wait $SERVER_PID 2>/dev/null
