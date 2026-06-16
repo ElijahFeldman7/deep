@@ -9,15 +9,14 @@
 #SBATCH --output=runs/slurm_logs/ner_pipeline_%j.out
 #SBATCH --error=runs/slurm_logs/ner_pipeline_%j.err
 
-source /csl/users/2028efeldman/venv/bin/activate
+source /tmp/venv/bin/activate
 
 echo "Starting custom llama-server with DeepSeek-V4-Flash..."
 ../llama.cpp/build/bin/llama-server \
     --model /csl/users/2028efeldman/model/Q4_K_M-XL/DeepSeek-V4-Flash-Q4_K_M-XL-00001-of-00004.gguf \
     --n_gpu_layers 99 \
-    --ctx_size 32768 \
-    --fit off \
-    --flash-attn off \
+    --ctx_size 24576 \
+    --flash-attn on \
     --split-mode layer \
     --port 8000 &
 SERVER_PID=$!
@@ -28,12 +27,12 @@ while [ "$(curl -s -o /dev/null -w "%{http_code}" http://localhost:8000/health)"
 done
 echo "Custom V4 server is fully loaded and ready on port 8000!"
 
-python run.py \
+python3 run.py \
     --input dataset/dataset.csv \
     --output dataset/dataset_extracted.csv \
     --cache dataset/cache.json \
     --url http://localhost:8000/v1 \
     --model /csl/users/2028efeldman/model/Q4_K_M-XL/DeepSeek-V4-Flash-Q4_K_M-XL-00001-of-00004.gguf \
-    --concurrency 4
+    --concurrency 8
 kill $SERVER_PID
 wait $SERVER_PID 2>/dev/null

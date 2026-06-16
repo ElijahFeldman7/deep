@@ -1,0 +1,771 @@
+Starting custom llama-server with DeepSeek-V4-Flash...
+Waiting for the 165GB model to fully load into VRAM...
+Custom V4 server is fully loaded and ready on port 8000!
+
+======================================================================
+    🚀 LIVE-PREVIEW CHUNKED NER-RE EXTRACTION PIPELINE 🚀
+======================================================================
+  Input File   : dataset/dataset.csv
+  Output File  : dataset/dataset_extracted.csv (Compiled at end)
+  Chunk Folder : output_chunks/ (Saves every 100 rows)
+  Concurrency  : 8 worker threads
+======================================================================
+
+2026-06-14 13:55:03 [INFO] Status Summary:
+2026-06-14 13:55:03 [INFO]   - Total Database Rows : 59950
+2026-06-14 13:55:03 [INFO]   - Already Cached      : 0
+2026-06-14 13:55:03 [INFO]   - Pending             : 59950
+2026-06-14 13:55:03 [INFO] Starting execution pool using 8 parallel workers...
+
+2026-06-14 14:25:06 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 14:25:06 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 14:25:06 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 14:25:06 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 14:25:06 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 14:25:06 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 14:25:06 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 14:25:06 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 14:55:13 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 14:55:13 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 14:55:13 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 14:55:13 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 14:55:13 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 14:55:13 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 14:55:13 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 14:55:13 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 15:25:24 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 15:25:24 [INFO] [Row 1/59950] Status: FAILED | Time: 5420.78s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11283:41:43
+2026-06-14 15:25:24 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 15:25:24 [INFO] [Row 2/59950] Status: FAILED | Time: 5420.99s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11283:43:13
+2026-06-14 15:25:24 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 15:25:24 [INFO] [Row 3/59950] Status: FAILED | Time: 5420.99s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11283:36:22
+2026-06-14 15:25:24 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 15:25:24 [INFO] [Row 4/59950] Status: FAILED | Time: 5420.99s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11283:27:23
+2026-06-14 15:25:25 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 15:25:25 [INFO] [Row 5/59950] Status: FAILED | Time: 5421.11s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11283:20:18
+2026-06-14 15:25:25 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 15:25:25 [INFO] [Row 6/59950] Status: FAILED | Time: 5421.22s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11283:14:11
+2026-06-14 15:25:25 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 15:25:25 [INFO] [Row 7/59950] Status: FAILED | Time: 5421.25s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11283:07:04
+2026-06-14 15:25:25 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 15:25:25 [INFO] [Row 8/59950] Status: FAILED | Time: 5421.44s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11283:01:50
+2026-06-14 15:55:26 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 15:55:26 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 15:55:26 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 15:55:26 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 15:55:26 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 15:55:26 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 15:55:26 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 15:55:26 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 16:25:32 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 16:25:32 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 16:25:33 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 16:25:33 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 16:25:33 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 16:25:33 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 16:25:33 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 16:25:33 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 16:55:44 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 16:55:44 [INFO] [Row 9/59950] Status: FAILED | Time: 5419.71s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11282:31:21
+2026-06-14 16:55:44 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 16:55:44 [INFO] [Row 10/59950] Status: FAILED | Time: 5419.67s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11282:04:09
+2026-06-14 16:55:44 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 16:55:44 [INFO] [Row 11/59950] Status: FAILED | Time: 5419.68s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11281:39:56
+2026-06-14 16:55:44 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 16:55:44 [INFO] [Row 12/59950] Status: FAILED | Time: 5419.59s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11281:16:56
+2026-06-14 16:55:44 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 16:55:44 [INFO] [Row 13/59950] Status: FAILED | Time: 5419.72s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11280:57:02
+2026-06-14 16:55:45 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 16:55:45 [INFO] [Row 14/59950] Status: FAILED | Time: 5419.91s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11280:40:04
+2026-06-14 16:55:45 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 16:55:45 [INFO] [Row 15/59950] Status: FAILED | Time: 5419.88s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11280:23:38
+2026-06-14 16:55:45 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 16:55:45 [INFO] [Row 16/59950] Status: FAILED | Time: 5420.13s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11280:09:44
+2026-06-14 17:25:45 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 17:25:46 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 17:25:46 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 17:25:46 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 17:25:46 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 17:25:46 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 17:25:46 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 17:25:46 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 17:55:52 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 17:55:52 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 17:55:52 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 17:55:52 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 17:55:52 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 17:55:52 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 17:55:53 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 17:55:53 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 18:26:04 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 18:26:04 [INFO] [Row 17/59950] Status: FAILED | Time: 5419.74s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11279:53:20
+2026-06-14 18:26:04 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 18:26:04 [INFO] [Row 18/59950] Status: FAILED | Time: 5419.73s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11279:37:25
+2026-06-14 18:26:04 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 18:26:04 [INFO] [Row 19/59950] Status: FAILED | Time: 5419.75s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11279:22:08
+2026-06-14 18:26:04 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 18:26:04 [INFO] [Row 20/59950] Status: FAILED | Time: 5419.84s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11279:07:46
+2026-06-14 18:26:04 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 18:26:04 [INFO] [Row 21/59950] Status: FAILED | Time: 5419.90s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11278:50:57
+2026-06-14 18:26:04 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 18:26:04 [INFO] [Row 22/59950] Status: FAILED | Time: 5419.57s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11278:30:50
+2026-06-14 18:26:04 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 18:26:04 [INFO] [Row 23/59950] Status: FAILED | Time: 5419.74s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11278:11:43
+2026-06-14 18:26:05 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 18:26:05 [INFO] [Row 24/59950] Status: FAILED | Time: 5419.77s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11277:52:46
+2026-06-14 18:56:05 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 18:56:05 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 18:56:05 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 18:56:06 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 18:56:06 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 18:56:06 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 18:56:06 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 18:56:06 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 19:26:12 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 19:26:12 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 19:26:12 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 19:26:12 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 19:26:12 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 19:26:13 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 19:26:13 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 19:26:13 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 19:56:24 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 19:56:24 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 19:56:24 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 19:56:24 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 19:56:24 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 19:56:24 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 19:56:24 [INFO] [Row 25/59950] Status: FAILED | Time: 5419.91s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11277:33:59
+2026-06-14 19:56:24 [INFO] [Row 26/59950] Status: FAILED | Time: 5419.77s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11277:13:38
+2026-06-14 19:56:24 [INFO] [Row 27/59950] Status: FAILED | Time: 5419.67s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11276:52:31
+2026-06-14 19:56:24 [INFO] [Row 28/59950] Status: FAILED | Time: 5419.97s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11276:32:03
+2026-06-14 19:56:24 [INFO] [Row 29/59950] Status: FAILED | Time: 5419.77s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11276:21:08
+2026-06-14 19:56:24 [INFO] [Row 30/59950] Status: FAILED | Time: 5419.78s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11276:10:31
+2026-06-14 19:56:24 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 19:56:24 [INFO] [Row 31/59950] Status: FAILED | Time: 5419.61s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11275:58:49
+2026-06-14 19:56:24 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 19:56:24 [INFO] [Row 32/59950] Status: FAILED | Time: 5419.79s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11275:48:50
+2026-06-14 20:26:26 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 20:26:26 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 20:26:26 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 20:26:26 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 20:26:26 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 20:26:26 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 20:26:26 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 20:26:26 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 20:56:32 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 20:56:32 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 20:56:32 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 20:56:32 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 20:56:32 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 20:56:32 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 20:56:32 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 20:56:32 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 21:26:44 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 21:26:44 [INFO] [Row 33/59950] Status: FAILED | Time: 5419.69s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11275:37:19
+2026-06-14 21:26:44 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 21:26:44 [INFO] [Row 34/59950] Status: FAILED | Time: 5419.41s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11275:22:52
+2026-06-14 21:26:44 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 21:26:44 [INFO] [Row 35/59950] Status: FAILED | Time: 5419.78s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11275:10:58
+2026-06-14 21:26:44 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 21:26:44 [INFO] [Row 36/59950] Status: FAILED | Time: 5419.79s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11274:57:32
+2026-06-14 21:26:44 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 21:26:44 [INFO] [Row 37/59950] Status: FAILED | Time: 5419.80s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11274:46:34
+2026-06-14 21:26:44 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 21:26:44 [INFO] [Row 38/59950] Status: FAILED | Time: 5419.96s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11274:36:41
+2026-06-14 21:26:44 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 21:26:44 [INFO] [Row 39/59950] Status: FAILED | Time: 5420.02s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11274:27:02
+2026-06-14 21:26:44 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 21:26:44 [INFO] [Row 40/59950] Status: FAILED | Time: 5420.10s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11274:17:21
+2026-06-14 21:56:45 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 21:56:45 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 21:56:45 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 21:56:45 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 21:56:46 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 21:56:46 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 21:56:46 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 21:56:46 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 22:26:52 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 22:26:52 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 22:26:52 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 22:26:52 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 22:26:52 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 22:26:52 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 22:26:52 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 22:26:52 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 22:57:03 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 22:57:03 [INFO] [Row 41/59950] Status: FAILED | Time: 5419.55s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11274:03:53
+2026-06-14 22:57:03 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 22:57:03 [INFO] [Row 42/59950] Status: FAILED | Time: 5419.67s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11273:53:10
+2026-06-14 22:57:03 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 22:57:03 [INFO] [Row 43/59950] Status: FAILED | Time: 5419.68s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11273:41:34
+2026-06-14 22:57:04 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 22:57:04 [INFO] [Row 44/59950] Status: FAILED | Time: 5419.78s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11273:30:21
+2026-06-14 22:57:04 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 22:57:04 [INFO] [Row 45/59950] Status: FAILED | Time: 5419.91s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11273:19:05
+2026-06-14 22:57:04 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 22:57:04 [INFO] [Row 46/59950] Status: FAILED | Time: 5419.79s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11273:07:55
+2026-06-14 22:57:04 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 22:57:04 [INFO] [Row 47/59950] Status: FAILED | Time: 5419.87s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11272:57:52
+2026-06-14 22:57:04 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-14 22:57:04 [INFO] [Row 48/59950] Status: FAILED | Time: 5419.87s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11272:45:59
+2026-06-14 23:27:05 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 23:27:05 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 23:27:05 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 23:27:05 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 23:27:05 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 23:27:05 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 23:27:05 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 23:27:06 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-14 23:57:12 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 23:57:12 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 23:57:12 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 23:57:12 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 23:57:12 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 23:57:12 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 23:57:12 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-14 23:57:12 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 00:27:23 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 00:27:23 [INFO] [Row 49/59950] Status: FAILED | Time: 5419.87s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11272:35:20
+2026-06-15 00:27:23 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 00:27:23 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 00:27:23 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 00:27:23 [INFO] [Row 50/59950] Status: FAILED | Time: 5419.71s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11272:23:39
+2026-06-15 00:27:23 [INFO] [Row 52/59950] Status: FAILED | Time: 5419.77s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11272:13:23
+2026-06-15 00:27:23 [INFO] [Row 52/59950] Status: FAILED | Time: 5419.80s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11272:02:06
+2026-06-15 00:27:24 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 00:27:24 [INFO] [Row 53/59950] Status: FAILED | Time: 5419.95s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11271:52:25
+2026-06-15 00:27:24 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 00:27:24 [INFO] [Row 54/59950] Status: FAILED | Time: 5419.66s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11271:42:42
+2026-06-15 00:27:24 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 00:27:24 [INFO] [Row 55/59950] Status: FAILED | Time: 5419.93s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11271:32:21
+2026-06-15 00:27:24 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 00:27:24 [INFO] [Row 56/59950] Status: FAILED | Time: 5419.90s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11271:21:47
+2026-06-15 00:57:25 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 00:57:25 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 00:57:25 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 00:57:25 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 00:57:25 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 00:57:25 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 00:57:25 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 00:57:26 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 01:27:31 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 01:27:32 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 01:27:32 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 01:27:32 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 01:27:32 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 01:27:32 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 01:27:32 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 01:27:32 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 01:57:43 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 01:57:43 [INFO] [Row 57/59950] Status: FAILED | Time: 5419.56s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11271:09:03
+2026-06-15 01:57:43 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 01:57:43 [INFO] [Row 58/59950] Status: FAILED | Time: 5419.54s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11270:55:07
+2026-06-15 01:57:43 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 01:57:43 [INFO] [Row 59/59950] Status: FAILED | Time: 5419.73s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11270:42:05
+2026-06-15 01:57:43 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 01:57:43 [INFO] [Row 60/59950] Status: FAILED | Time: 5419.70s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11270:28:17
+2026-06-15 01:57:43 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 01:57:43 [INFO] [Row 61/59950] Status: FAILED | Time: 5419.85s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11270:18:54
+2026-06-15 01:57:43 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 01:57:43 [INFO] [Row 62/59950] Status: FAILED | Time: 5419.71s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11270:07:52
+2026-06-15 01:57:44 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 01:57:44 [INFO] [Row 63/59950] Status: FAILED | Time: 5419.73s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11269:56:52
+2026-06-15 01:57:44 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 01:57:44 [INFO] [Row 64/59950] Status: FAILED | Time: 5419.82s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11269:45:47
+2026-06-15 02:27:44 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 02:27:45 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 02:27:45 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 02:27:45 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 02:27:45 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 02:27:45 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 02:27:45 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 02:27:45 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 02:57:51 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 02:57:51 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 02:57:51 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 02:57:52 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 02:57:52 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 02:57:52 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 02:57:52 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 02:57:52 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 03:28:03 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 03:28:03 [INFO] [Row 65/59950] Status: FAILED | Time: 5419.88s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11269:34:18
+2026-06-15 03:28:03 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 03:28:03 [INFO] [Row 66/59950] Status: FAILED | Time: 5419.85s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11269:23:25
+2026-06-15 03:28:03 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 03:28:03 [INFO] [Row 67/59950] Status: FAILED | Time: 5419.77s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11269:11:29
+2026-06-15 03:28:03 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 03:28:03 [INFO] [Row 68/59950] Status: FAILED | Time: 5419.75s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11268:59:28
+2026-06-15 03:28:03 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 03:28:03 [INFO] [Row 69/59950] Status: FAILED | Time: 5419.85s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11268:47:59
+2026-06-15 03:28:03 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 03:28:03 [INFO] [Row 70/59950] Status: FAILED | Time: 5419.89s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11268:37:47
+2026-06-15 03:28:03 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 03:28:03 [INFO] [Row 71/59950] Status: FAILED | Time: 5419.75s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11268:26:23
+2026-06-15 03:28:03 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 03:28:03 [INFO] [Row 72/59950] Status: FAILED | Time: 5419.75s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11268:14:50
+2026-06-15 03:58:04 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 03:58:04 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 03:58:05 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 03:58:05 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 03:58:05 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 03:58:05 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 03:58:05 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 03:58:05 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 04:28:11 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 04:28:11 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 04:28:11 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 04:28:11 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 04:28:11 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 04:28:11 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 04:28:11 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 04:28:12 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 04:58:22 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 04:58:22 [INFO] [Row 73/59950] Status: FAILED | Time: 5419.88s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11268:03:08
+2026-06-15 04:58:22 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 04:58:22 [INFO] [Row 74/59950] Status: FAILED | Time: 5419.61s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11267:51:32
+2026-06-15 04:58:23 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 04:58:23 [INFO] [Row 75/59950] Status: FAILED | Time: 5419.43s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11267:37:06
+2026-06-15 04:58:23 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 04:58:23 [INFO] [Row 76/59950] Status: FAILED | Time: 5419.88s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11267:25:41
+2026-06-15 04:58:23 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 04:58:23 [INFO] [Row 77/59950] Status: FAILED | Time: 5419.65s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11267:14:56
+2026-06-15 04:58:23 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 04:58:23 [INFO] [Row 78/59950] Status: FAILED | Time: 5419.81s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11267:05:21
+2026-06-15 04:58:23 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 04:58:23 [INFO] [Row 79/59950] Status: FAILED | Time: 5419.87s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11266:54:53
+2026-06-15 04:58:23 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 04:58:23 [INFO] [Row 80/59950] Status: FAILED | Time: 5419.92s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11266:45:00
+2026-06-15 05:28:24 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 05:28:24 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 05:28:24 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 05:28:24 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 05:28:24 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 05:28:25 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 05:28:25 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 05:28:25 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 05:58:31 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 05:58:31 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 05:58:31 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 05:58:31 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 05:58:31 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 05:58:31 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 05:58:31 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 05:58:32 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 06:28:42 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 06:28:42 [INFO] [Row 81/59950] Status: FAILED | Time: 5419.93s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11266:34:12
+2026-06-15 06:28:42 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 06:28:42 [INFO] [Row 82/59950] Status: FAILED | Time: 5419.43s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11266:21:09
+2026-06-15 06:28:43 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 06:28:43 [INFO] [Row 83/59950] Status: FAILED | Time: 5419.72s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11266:09:48
+2026-06-15 06:28:43 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 06:28:43 [INFO] [Row 84/59950] Status: FAILED | Time: 5419.60s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11265:57:09
+2026-06-15 06:28:43 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 06:28:43 [INFO] [Row 85/59950] Status: FAILED | Time: 5420.21s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11265:47:54
+2026-06-15 06:28:43 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 06:28:43 [INFO] [Row 86/59950] Status: FAILED | Time: 5419.93s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11265:37:06
+2026-06-15 06:28:43 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 06:28:43 [INFO] [Row 87/59950] Status: FAILED | Time: 5420.02s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11265:27:23
+2026-06-15 06:28:43 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 06:28:43 [INFO] [Row 88/59950] Status: FAILED | Time: 5420.04s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11265:17:52
+2026-06-15 06:58:44 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 06:58:44 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 06:58:44 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 06:58:44 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 06:58:44 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 06:58:44 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 06:58:44 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 06:58:45 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 07:28:51 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 07:28:51 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 07:28:51 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 07:28:51 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 07:28:51 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 07:28:51 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 07:28:51 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 07:28:51 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 07:59:02 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 07:59:02 [INFO] [Row 89/59950] Status: FAILED | Time: 5419.81s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11265:06:20
+2026-06-15 07:59:02 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 07:59:02 [INFO] [Row 90/59950] Status: FAILED | Time: 5419.82s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11264:54:35
+2026-06-15 07:59:02 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 07:59:02 [INFO] [Row 91/59950] Status: FAILED | Time: 5419.82s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11264:43:42
+2026-06-15 07:59:02 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 07:59:02 [INFO] [Row 92/59950] Status: FAILED | Time: 5419.83s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11264:32:53
+2026-06-15 07:59:03 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 07:59:03 [INFO] [Row 93/59950] Status: FAILED | Time: 5419.75s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11264:20:47
+2026-06-15 07:59:03 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 07:59:03 [INFO] [Row 94/59950] Status: FAILED | Time: 5419.93s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11264:11:30
+2026-06-15 07:59:03 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 07:59:03 [INFO] [Row 95/59950] Status: FAILED | Time: 5419.74s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11264:02:08
+2026-06-15 07:59:03 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 07:59:03 [INFO] [Row 96/59950] Status: FAILED | Time: 5419.54s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11263:48:42
+2026-06-15 08:29:04 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 08:29:04 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 08:29:04 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 08:29:04 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 08:29:04 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 08:29:04 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 08:29:04 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 08:29:04 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 08:59:10 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 08:59:10 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 08:59:10 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 08:59:11 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 08:59:11 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 08:59:11 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 08:59:11 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 08:59:11 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 09:29:22 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 09:29:22 [INFO] [Row 97/59950] Status: FAILED | Time: 5419.62s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11263:37:11
+2026-06-15 09:29:22 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 09:29:22 [INFO] [Row 98/59950] Status: FAILED | Time: 5419.64s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11263:24:48
+2026-06-15 09:29:22 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 09:29:22 [INFO] [Row 99/59950] Status: FAILED | Time: 5419.84s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11263:13:23
+2026-06-15 09:29:22 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 09:29:22 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 09:29:22 [INFO] [Row 100/59950] Status: FAILED | Time: 5419.60s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11263:00:03
+2026-06-15 09:29:22 [INFO] [Row 101/59950] Status: FAILED | Time: 5419.67s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11262:47:09
+2026-06-15 09:29:22 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 09:29:22 [INFO] [Row 102/59950] Status: FAILED | Time: 5419.66s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11262:37:16
+2026-06-15 09:29:22 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 09:29:22 [INFO] [Row 103/59950] Status: FAILED | Time: 5420.06s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11262:28:07
+2026-06-15 09:29:23 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 09:29:23 [INFO] [Row 104/59950] Status: FAILED | Time: 5420.11s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11262:20:03
+2026-06-15 09:59:23 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 09:59:24 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 09:59:24 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 09:59:24 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 09:59:24 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 09:59:24 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 09:59:24 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 09:59:24 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 10:29:30 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 10:29:30 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 10:29:30 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 10:29:30 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 10:29:30 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 10:29:31 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 10:29:31 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 10:29:31 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 10:59:41 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 10:59:41 [INFO] [Row 105/59950] Status: FAILED | Time: 5419.60s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11262:04:58
+2026-06-15 10:59:42 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 10:59:42 [INFO] [Row 106/59950] Status: FAILED | Time: 5419.60s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11261:51:35
+2026-06-15 10:59:42 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 10:59:42 [INFO] [Row 107/59950] Status: FAILED | Time: 5419.55s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11261:37:21
+2026-06-15 10:59:42 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 10:59:42 [INFO] [Row 108/59950] Status: FAILED | Time: 5419.70s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11261:23:58
+2026-06-15 10:59:42 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 10:59:42 [INFO] [Row 109/59950] Status: FAILED | Time: 5419.76s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11261:12:22
+2026-06-15 10:59:42 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 10:59:42 [INFO] [Row 110/59950] Status: FAILED | Time: 5419.48s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11260:59:00
+2026-06-15 10:59:42 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 10:59:42 [INFO] [Row 111/59950] Status: FAILED | Time: 5419.97s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11260:48:39
+2026-06-15 10:59:42 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 10:59:42 [INFO] [Row 112/59950] Status: FAILED | Time: 5420.00s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11260:38:23
+2026-06-15 11:29:43 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 11:29:43 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 11:29:43 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 11:29:43 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 11:29:44 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 11:29:44 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 11:29:44 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 11:29:44 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 11:59:50 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 11:59:50 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 11:59:50 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 11:59:50 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 11:59:50 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 11:59:50 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 11:59:50 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 11:59:51 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 12:30:01 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 12:30:01 [INFO] [Row 113/59950] Status: FAILED | Time: 5420.01s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11260:28:45
+2026-06-15 12:30:02 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 12:30:02 [INFO] [Row 114/59950] Status: FAILED | Time: 5419.88s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11260:17:10
+2026-06-15 12:30:02 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 12:30:02 [INFO] [Row 115/59950] Status: FAILED | Time: 5419.57s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11260:04:48
+2026-06-15 12:30:02 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 12:30:02 [INFO] [Row 116/59950] Status: FAILED | Time: 5419.99s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11259:56:21
+2026-06-15 12:30:02 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 12:30:02 [INFO] [Row 117/59950] Status: FAILED | Time: 5419.69s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11259:45:30
+2026-06-15 12:30:02 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 12:30:02 [INFO] [Row 118/59950] Status: FAILED | Time: 5419.40s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11259:32:44
+2026-06-15 12:30:02 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 12:30:02 [INFO] [Row 119/59950] Status: FAILED | Time: 5419.71s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11259:20:38
+2026-06-15 12:30:02 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 12:30:02 [INFO] [Row 120/59950] Status: FAILED | Time: 5419.77s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11259:10:25
+2026-06-15 13:00:03 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 13:00:03 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 13:00:03 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 13:00:03 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 13:00:03 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 13:00:03 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 13:00:04 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 13:00:04 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 13:30:10 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 13:30:10 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 13:30:10 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 13:30:10 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 13:30:10 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 13:30:10 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 13:30:10 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 13:30:10 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 14:00:21 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 14:00:21 [INFO] [Row 121/59950] Status: FAILED | Time: 5419.77s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11258:59:44
+2026-06-15 14:00:21 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 14:00:21 [INFO] [Row 122/59950] Status: FAILED | Time: 5419.75s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11258:49:02
+2026-06-15 14:00:21 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 14:00:21 [INFO] [Row 123/59950] Status: FAILED | Time: 5419.87s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11258:36:31
+2026-06-15 14:00:21 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 14:00:21 [INFO] [Row 124/59950] Status: FAILED | Time: 5419.73s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11258:22:49
+2026-06-15 14:00:21 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 14:00:22 [INFO] [Row 125/59950] Status: FAILED | Time: 5419.94s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11258:13:40
+2026-06-15 14:00:22 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 14:00:22 [INFO] [Row 126/59950] Status: FAILED | Time: 5419.75s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11258:03:19
+2026-06-15 14:00:22 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 14:00:22 [INFO] [Row 127/59950] Status: FAILED | Time: 5419.80s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11257:53:34
+2026-06-15 14:00:22 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 14:00:22 [INFO] [Row 128/59950] Status: FAILED | Time: 5419.77s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11257:42:43
+2026-06-15 14:30:23 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 14:30:23 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 14:30:23 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 14:30:23 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 14:30:23 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 14:30:23 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 14:30:23 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 14:30:24 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 15:00:29 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 15:00:30 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 15:00:30 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 15:00:30 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 15:00:30 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 15:00:30 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 15:00:30 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 15:00:30 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 15:30:41 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 15:30:41 [INFO] [Row 129/59950] Status: FAILED | Time: 5419.66s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11257:30:50
+2026-06-15 15:30:41 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 15:30:41 [INFO] [Row 130/59950] Status: FAILED | Time: 5419.64s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11257:20:31
+2026-06-15 15:30:41 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 15:30:41 [INFO] [Row 131/59950] Status: FAILED | Time: 5419.90s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11257:08:48
+2026-06-15 15:30:41 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 15:30:41 [INFO] [Row 132/59950] Status: FAILED | Time: 5419.81s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11256:56:20
+2026-06-15 15:30:41 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 15:30:41 [INFO] [Row 133/59950] Status: FAILED | Time: 5419.78s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11256:43:36
+2026-06-15 15:30:41 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 15:30:41 [INFO] [Row 134/59950] Status: FAILED | Time: 5419.69s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11256:31:07
+2026-06-15 15:30:42 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 15:30:42 [INFO] [Row 135/59950] Status: FAILED | Time: 5420.02s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11256:22:40
+2026-06-15 15:30:42 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 15:30:42 [INFO] [Row 136/59950] Status: FAILED | Time: 5419.87s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11256:10:35
+2026-06-15 16:00:43 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 16:00:43 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 16:00:43 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 16:00:43 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 16:00:43 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 16:00:43 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 16:00:43 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 16:00:43 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 16:30:49 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 16:30:49 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 16:30:49 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 16:30:50 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 16:30:50 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 16:30:50 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 16:30:50 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 16:30:50 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 17:01:01 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 17:01:01 [INFO] [Row 137/59950] Status: FAILED | Time: 5419.77s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11255:59:51
+2026-06-15 17:01:01 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 17:01:01 [INFO] [Row 138/59950] Status: FAILED | Time: 5419.79s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11255:50:59
+2026-06-15 17:01:01 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 17:01:01 [INFO] [Row 139/59950] Status: FAILED | Time: 5419.85s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11255:40:34
+2026-06-15 17:01:01 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 17:01:01 [INFO] [Row 140/59950] Status: FAILED | Time: 5419.70s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11255:28:50
+2026-06-15 17:01:01 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 17:01:01 [INFO] [Row 141/59950] Status: FAILED | Time: 5419.90s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11255:18:22
+2026-06-15 17:01:01 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 17:01:01 [INFO] [Row 142/59950] Status: FAILED | Time: 5420.04s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11255:08:53
+2026-06-15 17:01:01 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 17:01:01 [INFO] [Row 143/59950] Status: FAILED | Time: 5419.75s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11254:56:52
+2026-06-15 17:01:01 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 17:01:01 [INFO] [Row 144/59950] Status: FAILED | Time: 5419.70s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11254:45:24
+2026-06-15 17:31:02 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 17:31:02 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 17:31:02 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 17:31:03 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 17:31:03 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 17:31:03 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 17:31:03 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 17:31:03 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 18:01:09 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 18:01:09 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 18:01:09 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 18:01:09 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 18:01:09 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 18:01:09 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 18:01:09 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 18:01:10 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 18:31:20 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 18:31:20 [INFO] [Row 145/59950] Status: FAILED | Time: 5419.51s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11254:31:28
+2026-06-15 18:31:20 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 18:31:20 [INFO] [Row 146/59950] Status: FAILED | Time: 5419.59s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11254:19:11
+2026-06-15 18:31:21 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 18:31:21 [INFO] [Row 147/59950] Status: FAILED | Time: 5419.62s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11254:06:49
+2026-06-15 18:31:21 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 18:31:21 [INFO] [Row 148/59950] Status: FAILED | Time: 5419.51s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11253:53:53
+2026-06-15 18:31:21 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 18:31:21 [INFO] [Row 149/59950] Status: FAILED | Time: 5419.51s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11253:41:38
+2026-06-15 18:31:21 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 18:31:21 [INFO] [Row 150/59950] Status: FAILED | Time: 5419.85s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11253:31:39
+2026-06-15 18:31:21 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 18:31:21 [INFO] [Row 151/59950] Status: FAILED | Time: 5419.87s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11253:20:11
+2026-06-15 18:31:21 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 18:31:21 [INFO] [Row 152/59950] Status: FAILED | Time: 5419.84s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11253:09:04
+2026-06-15 19:01:22 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 19:01:22 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 19:01:22 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 19:01:22 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 19:01:22 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 19:01:22 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 19:01:23 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 19:01:23 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 19:31:28 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 19:31:29 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 19:31:29 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 19:31:29 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 19:31:29 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 19:31:29 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 19:31:29 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 19:31:30 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 20:01:40 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 20:01:40 [INFO] [Row 153/59950] Status: FAILED | Time: 5419.54s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11252:56:17
+2026-06-15 20:01:40 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 20:01:40 [INFO] [Row 154/59950] Status: FAILED | Time: 5419.41s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11252:43:12
+2026-06-15 20:01:40 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 20:01:40 [INFO] [Row 155/59950] Status: FAILED | Time: 5419.98s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11252:31:38
+2026-06-15 20:01:40 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 20:01:40 [INFO] [Row 156/59950] Status: FAILED | Time: 5419.53s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11252:18:13
+2026-06-15 20:01:40 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 20:01:40 [INFO] [Row 157/59950] Status: FAILED | Time: 5419.60s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11252:05:50
+2026-06-15 20:01:40 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 20:01:40 [INFO] [Row 158/59950] Status: FAILED | Time: 5419.71s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11251:54:03
+2026-06-15 20:01:41 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 20:01:41 [INFO] [Row 159/59950] Status: FAILED | Time: 5419.75s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11251:42:07
+2026-06-15 20:01:41 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 20:01:41 [INFO] [Row 160/59950] Status: FAILED | Time: 5419.89s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11251:32:02
+2026-06-15 20:31:42 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 20:31:42 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 20:31:42 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 20:31:42 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 20:31:42 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 20:31:42 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 20:31:43 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 20:31:43 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 21:01:48 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 21:01:48 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 21:01:48 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 21:01:48 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 21:01:49 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 21:01:49 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 21:01:49 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 21:01:49 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 21:32:00 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 21:32:00 [INFO] [Row 161/59950] Status: FAILED | Time: 5419.61s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11251:18:57
+2026-06-15 21:32:00 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 21:32:00 [INFO] [Row 162/59950] Status: FAILED | Time: 5419.94s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11251:07:01
+2026-06-15 21:32:00 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 21:32:00 [INFO] [Row 163/59950] Status: FAILED | Time: 5419.67s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11250:55:11
+2026-06-15 21:32:00 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 21:32:00 [INFO] [Row 164/59950] Status: FAILED | Time: 5419.77s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11250:44:21
+2026-06-15 21:32:00 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 21:32:00 [INFO] [Row 165/59950] Status: FAILED | Time: 5419.74s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11250:34:29
+2026-06-15 21:32:00 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 21:32:00 [INFO] [Row 166/59950] Status: FAILED | Time: 5419.72s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11250:24:00
+2026-06-15 21:32:00 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 21:32:00 [INFO] [Row 167/59950] Status: FAILED | Time: 5419.37s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11250:11:09
+2026-06-15 21:32:01 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 21:32:01 [INFO] [Row 168/59950] Status: FAILED | Time: 5419.65s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11250:00:41
+2026-06-15 22:02:01 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 22:02:01 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 22:02:02 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 22:02:02 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 22:02:02 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 22:02:02 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 22:02:02 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 22:02:02 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 22:32:08 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 22:32:08 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 22:32:08 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 22:32:08 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 22:32:08 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 22:32:08 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 22:32:09 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 22:32:09 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-15 23:02:19 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 23:02:19 [INFO] [Row 169/59950] Status: FAILED | Time: 5419.58s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11249:49:50
+2026-06-15 23:02:20 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 23:02:20 [INFO] [Row 170/59950] Status: FAILED | Time: 5419.75s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11249:37:55
+2026-06-15 23:02:20 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 23:02:20 [INFO] [Row 171/59950] Status: FAILED | Time: 5419.82s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11249:26:16
+2026-06-15 23:02:20 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 23:02:20 [INFO] [Row 172/59950] Status: FAILED | Time: 5419.80s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11249:14:47
+2026-06-15 23:02:20 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 23:02:20 [INFO] [Row 173/59950] Status: FAILED | Time: 5419.69s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11249:04:25
+2026-06-15 23:02:20 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 23:02:20 [INFO] [Row 174/59950] Status: FAILED | Time: 5419.77s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11248:55:24
+2026-06-15 23:02:20 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 23:02:20 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-15 23:02:22 [INFO] [Row 175/59950] Status: FAILED | Time: 5419.80s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11248:43:01
+2026-06-15 23:02:22 [INFO] [Row 176/59950] Status: FAILED | Time: 5419.76s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11248:33:09
+2026-06-15 23:32:21 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 23:32:21 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 23:32:21 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 23:32:21 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 23:32:21 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 23:32:22 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 23:32:23 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-15 23:32:23 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-16 00:02:28 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-16 00:02:28 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-16 00:02:28 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-16 00:02:28 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-16 00:02:28 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-16 00:02:28 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-16 00:02:30 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-16 00:02:30 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-16 00:32:39 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-16 00:32:39 [INFO] [Row 177/59950] Status: FAILED | Time: 5419.58s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11248:21:45
+2026-06-16 00:32:39 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-16 00:32:39 [INFO] [Row 178/59950] Status: FAILED | Time: 5419.93s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11248:11:51
+2026-06-16 00:32:39 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-16 00:32:39 [INFO] [Row 179/59950] Status: FAILED | Time: 5419.59s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11247:59:33
+2026-06-16 00:32:40 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-16 00:32:40 [INFO] [Row 180/59950] Status: FAILED | Time: 5419.63s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11247:46:35
+2026-06-16 00:32:40 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-16 00:32:40 [INFO] [Row 181/59950] Status: FAILED | Time: 5419.60s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11247:35:13
+2026-06-16 00:32:40 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-16 00:32:40 [INFO] [Row 182/59950] Status: FAILED | Time: 5419.68s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11247:22:19
+2026-06-16 00:32:41 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-16 00:32:41 [INFO] [Row 183/59950] Status: FAILED | Time: 5419.59s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11247:10:33
+2026-06-16 00:32:42 [ERROR] All 3 attempts failed: Request timed out.
+2026-06-16 00:32:42 [INFO] [Row 184/59950] Status: FAILED | Time: 5420.12s | Tokens Generated: 0 (0.0 tok/s) | Success: 0 | ETA: 11247:01:25
+2026-06-16 01:02:41 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-16 01:02:41 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-16 01:02:41 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-16 01:02:41 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-16 01:02:41 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-16 01:02:41 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-16 01:02:43 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-16 01:02:43 [WARNING] Attempt 1/3 failed: Request timed out. — retrying in 5.0s
+2026-06-16 01:32:47 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-16 01:32:47 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-16 01:32:48 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-16 01:32:48 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-16 01:32:48 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-16 01:32:48 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-16 01:32:50 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s
+2026-06-16 01:32:50 [WARNING] Attempt 2/3 failed: Request timed out. — retrying in 10.0s

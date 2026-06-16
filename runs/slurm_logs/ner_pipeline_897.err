@@ -1,0 +1,9 @@
+ggml_cuda_init: found 6 CUDA devices (Total VRAM: 290412 MiB):
+  Device 0: Quadro RTX 8000, compute capability 7.5, VMM: yes, VRAM: 48402 MiB
+  Device 1: Quadro RTX 8000, compute capability 7.5, VMM: yes, VRAM: 48402 MiB
+  Device 2: Quadro RTX 8000, compute capability 7.5, VMM: yes, VRAM: 48402 MiB
+  Device 3: Quadro RTX 8000, compute capability 7.5, VMM: yes, VRAM: 48402 MiB
+  Device 4: Quadro RTX 8000, compute capability 7.5, VMM: yes, VRAM: 48402 MiB
+  Device 5: Quadro RTX 8000, compute capability 7.5, VMM: yes, VRAM: 48402 MiB
+error: invalid argument: --n-parallel
+slurmstepd-unicron: error: *** JOB 897 ON unicron CANCELLED AT 2026-06-14T13:08:37 ***

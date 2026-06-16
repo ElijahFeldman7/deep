@@ -1,0 +1,19 @@
+Starting custom llama-server with DeepSeek-V4-Flash...
+Waiting for the 165GB model to fully load into VRAM...
+Custom V4 server is fully loaded and ready on port 8000!
+
+======================================================================
+    🚀 LIVE-PREVIEW CHUNKED NER-RE EXTRACTION PIPELINE 🚀
+======================================================================
+  Input File   : dataset/dataset.csv
+  Output File  : dataset/dataset_extracted.csv (Compiled at end)
+  Chunk Folder : output_chunks/ (Saves every 100 rows)
+  Concurrency  : 8 worker threads
+======================================================================
+
+2026-06-14 13:38:11 [INFO] Status Summary:
+2026-06-14 13:38:11 [INFO]   - Total Database Rows : 59950
+2026-06-14 13:38:11 [INFO]   - Already Cached      : 0
+2026-06-14 13:38:11 [INFO]   - Pending             : 59950
+2026-06-14 13:38:11 [INFO] Starting execution pool using 8 parallel workers...
+
